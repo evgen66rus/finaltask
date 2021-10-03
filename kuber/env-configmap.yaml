@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: redis-variables
+data:
+  REDIS_SLAVE_HOST: redis-slave
+  REDIS_MASTER_HOST: redis-master
+  KUBERNETES_SERVICE_HOST: 127.0.0.1
+  KUBERNETES_SERVICE_PORT: 8085
+  ELASTICSEARCH_HOSTS: http://es01:9200
